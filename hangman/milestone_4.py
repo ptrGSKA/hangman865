@@ -1,10 +1,23 @@
 import random
 
 class Hangman():
+    '''
+    The class is used to represent the instance of the Hangman game.
+
+    Args:
+        word_list (list): a given list of words where the game randomly selects a word from
+        num_lives (int): the count of attempts that the player can make
+        word (str): the random;y choosen element from the word_list
+        word_guessed (list): initially a list, containing underscores '_' as many as the number of letters in the choosen word
+        num_letters (int): the number of unique letters in the word
+        list_of_guesses (list): the valid guesses entered by the player
+    '''
 
     def __init__(self, word_list, num_lives = 5):
+        '''
+        The constructor initializes the attributes that necessary for the game.
+        '''
 
-        # Initializing attributes
         self.word_list = word_list
         self.num_lives = num_lives
         self.word = random.choice(self.word_list)
@@ -12,7 +25,15 @@ class Hangman():
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
 
-    def check_guess(self, guess):
+    def __check_guess(self, guess):
+        '''
+        The function is verifying if the letter is in the choosen random word.
+
+        Args:
+            guess (str): user input
+        Returns:
+            N/A
+        '''
 
         # Convert guess into lowercase
         guess = guess.lower()
@@ -24,7 +45,8 @@ class Hangman():
                 if self.word[pos] == guess:
                     self.word_guessed[pos] = guess
             self.num_letters -= 1
-        
+
+        # Called if the guessed letter not in the word.
         else:
             self.num_lives -= 1
             print(f'Sorry, {guess} is not in the word.')
@@ -32,7 +54,14 @@ class Hangman():
 
 
     def ask_for_input(self):
+        '''
+        The function is asking for a user input.
 
+        Args:
+            guess (str): user input
+        Returns:
+            N/A
+        '''
         while True:
 
             # Ask user for input
@@ -50,7 +79,7 @@ class Hangman():
             
             # Function call to validate the letter and appending the guess to the list_of_guesses.
             else:
-                self.check_guess(guess)
+                self.__check_guess(guess)
                 self.list_of_guesses.append(guess)
 
 
