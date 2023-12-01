@@ -28,11 +28,19 @@ Construct a record and request the user to provide an entry that is verified to 
 
 ## Milestone 3
 
-In this phase of the project, two functions were established. The initial function prompts the user for input, while the second function dynamically verifies the accuracy of the user's guess. 
+In this phase of the project, two functions were established. The initial function prompts the user for input,
+while the second function dynamically verifies the accuracy of the user's guess. 
 
 ## Milestone 4
 
-WIP
+Created the Hangman game class with initialized attributes and two methods.
+
+check_guess method: it converts the user input into lower case than Vverifies if the letter is in the choosen random word,
+                    and appending the guess to the word_guessed list.
+
+ask_for_input method: asking for user input and verifies the validity of the guess or the letter has been guessed before.
+                    If the letter passes all checks it calls the check_guess_method and appends the guess to the list_of_guesses.
+
 ## Milestone 5
 
 WIP
@@ -43,7 +51,11 @@ WIP
 
 # How to use
 
-WIP
+Once the game begins, it is played within the CLI environment. 
+The user is prompted by the game to provide an input in the form of a letter, and the game persists until the word is correctly guessed
+or the player exhausts all of their lives.
+If the guessed letter is invalid, the game will inform the user and prompt for another letter instead.
+The system keeps track of all the attempts made to ensure that no letter is repeated.
 
 # File structure
 
