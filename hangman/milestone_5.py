@@ -32,6 +32,9 @@ class Hangman:
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
 
+        print(f'The mystery word has {self.num_letters} letters.')
+        print(f'The word: {self.word_guessed}')
+
     def __check_guess(self, guess):
         '''
         The function is verifying if the letter is in the choosen random word.
@@ -108,6 +111,7 @@ def play_game(word_list):
         game.ask_for_input()
         if game.num_lives == 0:
             print('You lost!')
+            print(f'The word was {game.word}')
             break
         elif game.num_lives != 0 and game.num_letters == 0:
             print('Congratulations. You won the game!')
