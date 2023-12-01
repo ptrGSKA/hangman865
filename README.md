@@ -19,7 +19,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ## Milestone 1
 
-Setting up the github repository for the Hangman project.
+Setting up the github repository for the Hangman project and cloning the repository for local use.
 
 ## Milestone 2
 
@@ -43,11 +43,19 @@ ask_for_input method: asking for user input and verifies the validity of the gue
 
 ## Milestone 5
 
-WIP
+The finals steps were coded in this part of the project.
+The play_game function has been added to the file.
+
+play_game function: The function operates until the player either emerges victorious or faces defeat.
+                    The conditions are evaluated after every step and a decision is made accordingly. 
 
 # Installation 
 
-WIP
+Follow the steps to install the game:
+
+1. Clone the github repository by typig in the Command Line Interface ```git clone [git_repository_url]``` on either operating system.
+2. Navigate to the folder where the repository was cloned and open a terminal/shell or alternatively nnavigate to the folder using the shell.
+3. Type the command  ```python3 hangman.py``` to start the game.
 
 # How to use
 
@@ -59,6 +67,16 @@ The system keeps track of all the attempts made to ensure that no letter is repe
 
 # File structure
 
-WIP
+The files for the game can be found in the hangman folder.
+
+- hangman
+    - milestone_2.py
+    - milestone_3.py
+    - milestone_4.py
+    - milestone_5.py
+    - hangman.py
+- README.md
 
 # Licence
+
+CC0 1.0 Universal - see Licence.txt
