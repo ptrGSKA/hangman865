@@ -54,7 +54,7 @@ play_game function: The function operates until the player either emerges victor
 Follow the steps to install the game:
 
 1. Clone the github repository by typig in the Command Line Interface ```git clone [git_repository_url]``` on either operating system.
-2. Navigate to the folder where the repository was cloned and open a terminal/shell or alternatively nnavigate to the folder using the shell.
+2. Navigate to the folder where the repository was cloned and in the hangman folder open a terminal/shell or alternatively navigate to the folder using the shell.
 3. Type the command  ```python3 hangman.py``` to start the game.
 
 # How to use
