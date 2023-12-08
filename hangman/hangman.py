@@ -1,5 +1,6 @@
 import random
 
+
 class Hangman:
     '''
     The class is used to represent the instance of the Hangman game.
@@ -45,9 +46,6 @@ class Hangman:
             N/A
         '''
 
-        # Convert guess into lowercase
-        guess = guess.lower()
-
         # Verifying if the letter is in the choosen random word an appending the guess to the word_guessed list.
         if guess in self.word:
             print(f'Good guess! {guess} is in the word.')
@@ -78,6 +76,9 @@ class Hangman:
 
         # Ask user for input
         guess = input('Please enter a letter:   ')
+
+        # Convert guess into lowercase
+        guess = guess.lower()
 
         # Verifying the authenticity of the letter.
         if len(guess) != 1 or not guess.isalpha():
@@ -120,5 +121,7 @@ def play_game(word_list):
 # List of fruits for the game to play
 word_list = ['grapes', 'pomegranate', 'cherry', 'pineapple', 'blueberry']
 
-# Function call for the game to start.
-play_game(word_list)
+if __name__ == '__main__':
+
+    # Function call for the game to start.
+    play_game(word_list)
