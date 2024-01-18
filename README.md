@@ -15,7 +15,7 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 # Description
 
-This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it.
+Hangman is a guessing game for two or more players. One player thinks of a word, phrase, or sentence and the other(s) tries to guess it by suggesting letters or numbers within a certain number of guesses. Originally a paper-and-pencil game, and this is the electronic version, implementation of the game, where the computer thinks of a word and the user tries to guess it.
 
 ## Milestone 1
 
@@ -24,22 +24,26 @@ Setting up the github repository for the Hangman project and cloning the reposit
 ## Milestone 2
 
 Creating the first parts of the game.
-Construct a record and request the user to provide an entry that is verified to be a single alphabetical character.
+Defining a list of possible words to choose from and request the user to provide an entry that is verified to be a single alphabetical character.
+
+![](images/list.png)
 
 ## Milestone 3
 
-In this phase of the project, two functions were established. The initial function prompts the user for input,
-while the second function dynamically verifies the accuracy of the user's guess. 
+In this phase of the project, two functions were established. The initial function prompts the user for input, while the second function dynamically verifies the accuracy of the user's guess.
 
 ## Milestone 4
 
 Created the Hangman game class with initialized attributes and two methods.
 
-check_guess method: it converts the user input into lower case than Vverifies if the letter is in the choosen random word,
+**check_guess method:** it converts the user input into lower case than Vverifies if the letter is in the choosen random word,
                     and appending the guess to the word_guessed list.
 
-ask_for_input method: asking for user input and verifies the validity of the guess or the letter has been guessed before.
-                    If the letter passes all checks it calls the check_guess_method and appends the guess to the list_of_guesses.
+**ask_for_input method:** asking for user input and verifies the validity of the guess or the letter has been guessed before. If the letter passes all checks it calls the check_guess_method and appends the guess to the list_of_guesses.
+
+![](images/input.png)
+
+![](images/guess.png)
 
 ## Milestone 5
 
@@ -65,17 +69,28 @@ or the player exhausts all of their lives.
 If the guessed letter is invalid, the game will inform the user and prompt for another letter instead.
 The system keeps track of all the attempts made to ensure that no letter is repeated.
 
+![](images/game.png)
+
 # File structure
 
-The files for the game can be found in the hangman folder.
+The file sctructure of the project: 
 
-- hangman
-    - milestone_2.py
-    - milestone_3.py
-    - milestone_4.py
-    - milestone_5.py
-    - hangman.py
-- README.md
+```
+.
+├── hangman
+│   ├── hangman.py
+│   ├── milestone_2.py
+│   ├── milestone_3.py
+│   ├── milestone_4.py
+│   └── milestone_5.py
+├── images
+│   ├── game.png
+│   ├── guess.png
+│   ├── input.png
+│   └── list.png
+├── Licence.txt
+└── README.md
+```
 
 # Licence
 
